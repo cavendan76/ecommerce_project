@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "aside section section"
+    "footer footer footer";
+  grid-template-rows: 0.5fr 4fr 0.5fr;
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+  border-color: #012748;
+  border-bottom-color: #012748;
+  gap: 0px;
+  overflow: auto;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.escudo {
+  width: 50px;
+}
+
+.titulo {
+  font-size: 20px;
+  color: #012748;
+  font-family: Helvetica;
+  font-weight: 800;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #012748;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-direction: column;
+
+}
+
+.aside_titulo {
+  font-size: 20px;
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.aside_categoria {
+  font-size: 15px;
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+.aside_cantidad {
+  font-size: 15px;
+  color: gray;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.section {
+  grid-area: section;
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: #012748;
+}
+
+.imagenes {
+  border: 1em;
+  width: 300px;
+}
+
+.card_articulo {
+  font-size: 15px;
+  color: #012748;
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+.card_precio {
+  font-size: 18px;
+  color: #012748;
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+.boton {
+  background-color: #012748;
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #f6f6f6;
+  padding: 10px 30px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #D5D6DE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.pie {
+  font-size: 20px;
+  color: #012748;
+  font-family: Helvetica;
+  font-weight: 300;
+}
